@@ -259,33 +259,7 @@ ul {
 }
 
 /* Mobile Navigation */
-@media (max-width: 1023px) {
-    .nav {
-        position: fixed;
-        top: 80px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: var(--color-white);
-        flex-direction: column;
-        padding: var(--spacing-xl);
-        gap: var(--spacing-lg);
-        transform: translateX(-100%);
-        transition: transform var(--transition-normal);
-    }
-
-    .nav.active {
-        display: flex;
-        transform: translateX(0);
-    }
-
-    .nav-link {
-        font-size: 1.25rem;
-        padding: var(--spacing-md) 0;
-        border-bottom: 1px solid var(--color-gray-200);
-        width: 100%;
-    }
-}
+/* Mobile Navigation handled in media query at bottom of file */
 
 /* =====================================================
    BUTTONS
@@ -1548,6 +1522,7 @@ a.contact-value:hover {
         font-size: 1rem;
     }
 }
+
 /* Stars */
 .filled {
     fill: currentColor;
@@ -1626,25 +1601,27 @@ a.contact-value:hover {
     .zones-simple-text {
         font-size: 1rem;
     }
-    
+
     .zone-card.simplified {
         padding: var(--spacing-lg);
     }
-    
+
     .zone-card-value {
         font-size: 1.25rem;
     }
 
     /* Testimonial card sizing for mobile */
     .testimonial-card {
-        width: 280px; /* Slightly narrower for mobile screens */
+        width: 280px;
+        /* Slightly narrower for mobile screens */
     }
-    
+
     /* Ensure no horizontal overflow except for carousel */
-    body, html {
+    body,
+    html {
         overflow-x: hidden;
     }
-    
+
     .testimonials-container {
         width: 100vw;
         padding: var(--spacing-lg) 0;
