@@ -62,3 +62,4 @@ npm run build
 - [x] Phase 3 : Données structurées SEO
 - [ ] Phase 4 : Développement frontend (Gemini)
 - [ ] Phase 5 : Intégration et déploiement
+# site-taxi
