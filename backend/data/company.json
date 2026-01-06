@@ -1,0 +1,123 @@
+{
+  "name": "ID Taxi",
+  "legalName": "ID Taxi",
+  "tagline": "Une autre idée du transport en taxi",
+  "description": "Service de taxi professionnel à Saint-Gratien et dans le Val-d'Oise. Transferts aéroports, gares et tous trajets. Disponible 24h/24, 7j/7.",
+
+  "contact": {
+    "phone": "+33685730339",
+    "phoneFormatted": "06 85 73 03 39",
+    "phoneInternational": "+33 6 85 73 03 39",
+    "email": "reservation@id-taxi.fr",
+    "whatsapp": null
+  },
+
+  "address": {
+    "street": null,
+    "city": "Saint-Gratien",
+    "postalCode": "95210",
+    "department": "Val-d'Oise",
+    "departmentCode": "95",
+    "region": "Île-de-France",
+    "country": "France",
+    "countryCode": "FR"
+  },
+
+  "hours": {
+    "open": "00:00",
+    "close": "23:59",
+    "is24h": true,
+    "days": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"],
+    "displayText": "24h/24 - 7j/7",
+    "holidays": true
+  },
+
+  "languages": [
+    {"code": "fr", "name": "Français", "flag": "🇫🇷"},
+    {"code": "en", "name": "English", "flag": "🇬🇧"},
+    {"code": "es", "name": "Español", "flag": "🇪🇸"}
+  ],
+
+  "features": [
+    {
+      "icon": "clock",
+      "title": "24h/24 - 7j/7",
+      "description": "Service disponible à toute heure"
+    },
+    {
+      "icon": "shield",
+      "title": "Chauffeur professionnel",
+      "description": "Expérience et courtoisie"
+    },
+    {
+      "icon": "car",
+      "title": "Véhicules confortables",
+      "description": "Climatisation, propreté garantie"
+    },
+    {
+      "icon": "euro",
+      "title": "Prix transparents",
+      "description": "Devis gratuit sur demande"
+    }
+  ],
+
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Marie D.",
+      "city": "Enghien-les-Bains",
+      "rating": 5,
+      "text": "Service impeccable pour mon transfert à Roissy. Chauffeur ponctuel, véhicule propre et confortable. Je recommande vivement !",
+      "date": "2024-12-15",
+      "service": "Transfert Aéroport"
+    },
+    {
+      "id": 2,
+      "name": "Pierre L.",
+      "city": "Saint-Gratien",
+      "rating": 5,
+      "text": "J'utilise ID Taxi régulièrement pour mes déplacements professionnels. Toujours à l'heure, tarifs raisonnables. Parfait !",
+      "date": "2024-11-28",
+      "service": "Trajet Professionnel"
+    },
+    {
+      "id": 3,
+      "name": "Sophie M.",
+      "city": "Argenteuil",
+      "rating": 5,
+      "text": "Excellent service pour emmener ma mère à ses rendez-vous médicaux. Patient, attentionné et très professionnel.",
+      "date": "2024-11-10",
+      "service": "RDV Médical"
+    },
+    {
+      "id": 4,
+      "name": "Jean-Claude R.",
+      "city": "Ermont",
+      "rating": 5,
+      "text": "Réservé à 5h du matin pour un vol, le chauffeur était là 10 minutes en avance. Service au top !",
+      "date": "2024-10-22",
+      "service": "Transfert Aéroport"
+    }
+  ],
+
+  "social": {
+    "facebook": null,
+    "instagram": null,
+    "google": null
+  },
+
+  "legal": {
+    "siret": null,
+    "licenceTaxi": null,
+    "assurance": null
+  },
+
+  "seo": {
+    "siteName": "ID Taxi",
+    "defaultTitle": "ID Taxi Saint-Gratien | Taxi Val-d'Oise 95 - 24h/24",
+    "defaultDescription": "Service de taxi à Saint-Gratien et Val-d'Oise. Transferts aéroports Roissy & Orly, gares parisiennes. Disponible 24h/24, 7j/7. Réservez au 06 85 73 03 39.",
+    "defaultKeywords": ["taxi saint-gratien", "taxi 95", "taxi val d'oise", "vtc 95", "taxi aeroport roissy", "taxi orly"],
+    "ogImage": "/images/og-image.jpg",
+    "locale": "fr_FR"
+  }
+}

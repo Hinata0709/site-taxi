@@ -1,0 +1,208 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TaxiService",
+      "@id": "https://id-taxi.fr/#taxiservice",
+      "name": "ID Taxi",
+      "description": "Service de taxi professionnel à Saint-Gratien et Val-d'Oise. Transferts aéroports, gares et tous trajets.",
+      "url": "https://id-taxi.fr",
+      "telephone": "+33685730339",
+      "email": "reservation@id-taxi.fr",
+      "priceRange": "€€",
+      "currenciesAccepted": "EUR",
+      "paymentAccepted": "Cash, Credit Card",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Saint-Gratien",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Val-d'Oise"
+          }
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Val-d'Oise"
+        },
+        {
+          "@type": "City",
+          "name": "Enghien-les-Bains"
+        },
+        {
+          "@type": "City",
+          "name": "Argenteuil"
+        },
+        {
+          "@type": "City",
+          "name": "Épinay-sur-Seine"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Saint-Gratien",
+        "postalCode": "95210",
+        "addressRegion": "Val-d'Oise",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 48.9667,
+        "longitude": 2.2833
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      ],
+      "availableLanguage": [
+        {
+          "@type": "Language",
+          "name": "French"
+        },
+        {
+          "@type": "Language",
+          "name": "English"
+        },
+        {
+          "@type": "Language",
+          "name": "Spanish"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services de taxi",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Transfert Aéroport",
+              "description": "Navettes vers Roissy CDG, Orly et Beauvais"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Transfert Gare",
+              "description": "Navettes vers toutes les gares parisiennes"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Trajet Personnalisé",
+              "description": "Tous vos déplacements sur mesure"
+            }
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "4",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Marie D."
+          },
+          "reviewBody": "Service impeccable pour mon transfert à Roissy. Chauffeur ponctuel, véhicule propre et confortable."
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Pierre L."
+          },
+          "reviewBody": "J'utilise ID Taxi régulièrement pour mes déplacements professionnels. Toujours à l'heure."
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://id-taxi.fr/#website",
+      "url": "https://id-taxi.fr",
+      "name": "ID Taxi",
+      "description": "Service de taxi à Saint-Gratien et Val-d'Oise",
+      "publisher": {
+        "@id": "https://id-taxi.fr/#taxiservice"
+      },
+      "inLanguage": "fr-FR"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://id-taxi.fr/#webpage",
+      "url": "https://id-taxi.fr",
+      "name": "ID Taxi Saint-Gratien | Taxi Val-d'Oise 95 - 24h/24",
+      "description": "Service de taxi à Saint-Gratien et Val-d'Oise. Transferts aéroports Roissy & Orly. Disponible 24h/24, 7j/7.",
+      "isPartOf": {
+        "@id": "https://id-taxi.fr/#website"
+      },
+      "about": {
+        "@id": "https://id-taxi.fr/#taxiservice"
+      },
+      "inLanguage": "fr-FR"
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://id-taxi.fr/#localbusiness",
+      "name": "ID Taxi",
+      "image": "https://id-taxi.fr/images/logo.png",
+      "telephone": "+33685730339",
+      "email": "reservation@id-taxi.fr",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Saint-Gratien",
+        "postalCode": "95210",
+        "addressRegion": "Val-d'Oise",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 48.9667,
+        "longitude": 2.2833
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": []
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "services": [
+    {
+      "id": "airport-transfer",
+      "slug": "transfert-aeroport",
+      "title": "Transfert Aéroport",
+      "shortTitle": "Aéroports",
+      "icon": "plane",
+      "description": "Navettes vers tous les aéroports parisiens",
+      "longDescription": "Service de transfert professionnel vers les aéroports Roissy Charles de Gaulle, Orly et Beauvais. Nous assurons votre prise en charge à domicile et vous déposons directement au terminal de départ. Pour les arrivées, nous suivons votre vol en temps réel pour être présents dès votre atterrissage.",
+      "features": [
+        "Suivi des vols en temps réel",
+        "Prix fixe annoncé à l'avance",
+        "Prise en charge ponctuelle",
+        "Aide aux bagages incluse",
+        "Véhicule confortable et climatisé",
+        "Sièges enfant sur demande"
+      ],
+      "destinations": [
+        {
+          "name": "Aéroport Roissy CDG",
+          "code": "CDG",
+          "distance": "~35 km depuis Saint-Gratien"
+        },
+        {
+          "name": "Aéroport d'Orly",
+          "code": "ORY",
+          "distance": "~40 km depuis Saint-Gratien"
+        },
+        {
+          "name": "Aéroport de Beauvais",
+          "code": "BVA",
+          "distance": "~60 km depuis Saint-Gratien"
+        }
+      ],
+      "seo": {
+        "title": "Taxi Aéroport depuis Saint-Gratien | Roissy, Orly - ID Taxi",
+        "description": "Transfert taxi vers Roissy CDG et Orly depuis Saint-Gratien et Val-d'Oise. Prix fixe, ponctualité garantie. Réservez 24h/24 au 06 85 73 03 39.",
+        "h1": "Transfert Taxi Aéroport",
+        "keywords": ["taxi aeroport roissy", "navette orly", "transfert cdg", "taxi aeroport 95"]
+      }
+    },
+    {
+      "id": "train-station",
+      "slug": "transfert-gare",
+      "title": "Transfert Gare",
+      "shortTitle": "Gares",
+      "icon": "train",
+      "description": "Navettes vers toutes les gares parisiennes",
+      "longDescription": "Besoin de rejoindre une gare parisienne pour prendre votre train ? ID Taxi vous conduit à l'heure à Gare du Nord, Gare de Lyon, Gare Montparnasse, Gare de l'Est, Gare Saint-Lazare ou Gare d'Austerlitz. Service également disponible pour vos arrivées.",
+      "features": [
+        "Ponctualité garantie",
+        "Connaissance des accès gares",
+        "Aide aux bagages",
+        "Dépose au plus près du quai",
+        "Disponible tôt le matin et tard le soir"
+      ],
+      "destinations": [
+        {
+          "name": "Gare du Nord",
+          "trains": ["Eurostar", "Thalys", "TGV Nord"]
+        },
+        {
+          "name": "Gare de Lyon",
+          "trains": ["TGV Sud-Est", "TGV Méditerranée"]
+        },
+        {
+          "name": "Gare Montparnasse",
+          "trains": ["TGV Atlantique", "TGV Ouest"]
+        },
+        {
+          "name": "Gare de l'Est",
+          "trains": ["TGV Est", "ICE"]
+        },
+        {
+          "name": "Gare Saint-Lazare",
+          "trains": ["Trains Normandie"]
+        }
+      ],
+      "seo": {
+        "title": "Taxi Gare Paris depuis Saint-Gratien | ID Taxi 95",
+        "description": "Navette taxi vers les gares parisiennes depuis Saint-Gratien. Gare du Nord, Gare de Lyon, Montparnasse. Réservez au 06 85 73 03 39.",
+        "h1": "Transfert Taxi Gare",
+        "keywords": ["taxi gare du nord", "taxi gare de lyon", "navette gare paris", "taxi gare 95"]
+      }
+    },
+    {
+      "id": "custom-ride",
+      "slug": "trajet-personnalise",
+      "title": "Trajet Personnalisé",
+      "shortTitle": "Sur Mesure",
+      "icon": "car",
+      "description": "Tous vos déplacements sur mesure",
+      "longDescription": "Au-delà des transferts aéroports et gares, ID Taxi vous accompagne pour tous vos déplacements : rendez-vous médicaux, réunions professionnelles, événements familiaux, sorties, shopping... Nous nous adaptons à vos besoins.",
+      "features": [
+        "Flexibilité horaire totale",
+        "Attente sur place possible",
+        "Discrétion assurée",
+        "Trajets longue distance",
+        "Mise à disposition à l'heure",
+        "Véhicule adapté à vos besoins"
+      ],
+      "useCases": [
+        "Rendez-vous médicaux et hospitaliers",
+        "Réunions professionnelles",
+        "Mariages et événements",
+        "Sorties restaurants et spectacles",
+        "Visites touristiques",
+        "Déplacements réguliers"
+      ],
+      "seo": {
+        "title": "Taxi Saint-Gratien Tous Trajets | ID Taxi Val-d'Oise",
+        "description": "Taxi pour tous vos déplacements à Saint-Gratien et Val-d'Oise. RDV médicaux, événements, trajets quotidiens. Appelez le 06 85 73 03 39.",
+        "h1": "Trajets Personnalisés",
+        "keywords": ["taxi rdv medical", "taxi evenement", "taxi mise a disposition", "vtc 95"]
+      }
+    },
+    {
+      "id": "24-7-service",
+      "slug": "service-24h",
+      "title": "Service 24h/24",
+      "shortTitle": "24h/24",
+      "icon": "clock",
+      "description": "Disponible à toute heure, tous les jours",
+      "longDescription": "Vol tôt le matin ? Retour tardif ? Urgence ? ID Taxi est disponible 24 heures sur 24, 7 jours sur 7, y compris les week-ends et jours fériés. Un simple appel suffit pour réserver votre taxi.",
+      "features": [
+        "Disponible nuit et jour",
+        "Week-ends et jours fériés",
+        "Réservation à l'avance ou immédiate",
+        "Réponse rapide garantie"
+      ],
+      "seo": {
+        "title": "Taxi 24h/24 Saint-Gratien | ID Taxi Nuit & Jour",
+        "description": "Taxi disponible 24h/24 à Saint-Gratien et Val-d'Oise. Service de nuit, week-ends et jours fériés. Appelez le 06 85 73 03 39.",
+        "h1": "Taxi 24h/24",
+        "keywords": ["taxi nuit", "taxi 24h", "taxi dimanche", "taxi jour ferie 95"]
+      }
+    }
+  ]
+}

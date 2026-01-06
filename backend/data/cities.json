@@ -1,0 +1,280 @@
+{
+  "cities": [
+    {
+      "slug": "saint-gratien",
+      "name": "Saint-Gratien",
+      "postalCode": "95210",
+      "department": "Val-d'Oise",
+      "departmentCode": "95",
+      "isMain": true,
+      "coordinates": {
+        "lat": 48.9667,
+        "lng": 2.2833
+      },
+      "seo": {
+        "title": "Taxi Saint-Gratien | Réservation 24h/24 - ID Taxi 95",
+        "description": "Service de taxi à Saint-Gratien (95210). Transferts aéroports Roissy & Orly, gares parisiennes. Disponible 24h/24, 7j/7. Réservez au 06 85 73 03 39.",
+        "h1": "Votre Taxi à Saint-Gratien",
+        "keywords": ["taxi saint-gratien", "taxi 95210", "vtc saint-gratien", "taxi saint gratien aeroport"]
+      },
+      "content": {
+        "intro": "ID Taxi, votre service de taxi de confiance à Saint-Gratien. Nous assurons tous vos déplacements dans le Val-d'Oise et vers Paris, les aéroports et les gares.",
+        "services": "Transferts aéroports (Roissy CDG, Orly), navettes gares, trajets professionnels et personnels.",
+        "availability": "Service disponible 24 heures sur 24, 7 jours sur 7, même les jours fériés."
+      }
+    },
+    {
+      "slug": "enghien-les-bains",
+      "name": "Enghien-les-Bains",
+      "postalCode": "95880",
+      "department": "Val-d'Oise",
+      "departmentCode": "95",
+      "isMain": false,
+      "coordinates": {
+        "lat": 48.9697,
+        "lng": 2.3078
+      },
+      "seo": {
+        "title": "Taxi Enghien-les-Bains | Transfert Aéroport & Gare - ID Taxi",
+        "description": "Taxi à Enghien-les-Bains (95880). Navettes aéroports Roissy, Orly. Service 24h/24, 7j/7. Appelez ID Taxi au 06 85 73 03 39.",
+        "h1": "Taxi à Enghien-les-Bains",
+        "keywords": ["taxi enghien-les-bains", "taxi enghien", "vtc enghien-les-bains", "taxi casino enghien"]
+      },
+      "content": {
+        "intro": "Besoin d'un taxi à Enghien-les-Bains ? ID Taxi assure vos transferts vers les aéroports, gares et tous vos déplacements dans le Val-d'Oise.",
+        "services": "Navettes casino, transferts aéroports, déplacements professionnels.",
+        "availability": "Disponible 24h/24 pour vos trajets depuis Enghien-les-Bains."
+      }
+    },
+    {
+      "slug": "argenteuil",
+      "name": "Argenteuil",
+      "postalCode": "95100",
+      "department": "Val-d'Oise",
+      "departmentCode": "95",
+      "isMain": false,
+      "coordinates": {
+        "lat": 48.9472,
+        "lng": 2.2467
+      },
+      "seo": {
+        "title": "Taxi Argenteuil | Service 24h/24 - ID Taxi Val-d'Oise",
+        "description": "Votre taxi à Argenteuil (95100). Transferts aéroports Roissy & Orly, tous trajets Val-d'Oise et Paris. Réservez au 06 85 73 03 39.",
+        "h1": "Taxi à Argenteuil",
+        "keywords": ["taxi argenteuil", "taxi 95100", "vtc argenteuil", "taxi argenteuil paris"]
+      },
+      "content": {
+        "intro": "ID Taxi dessert Argenteuil et ses environs. Profitez d'un service de taxi professionnel pour tous vos déplacements.",
+        "services": "Transferts aéroports, gares, rendez-vous médicaux, sorties.",
+        "availability": "Service de taxi disponible jour et nuit à Argenteuil."
+      }
+    },
+    {
+      "slug": "epinay-sur-seine",
+      "name": "Épinay-sur-Seine",
+      "postalCode": "93800",
+      "department": "Seine-Saint-Denis",
+      "departmentCode": "93",
+      "isMain": false,
+      "coordinates": {
+        "lat": 48.9553,
+        "lng": 2.3094
+      },
+      "seo": {
+        "title": "Taxi Épinay-sur-Seine | Réservation - ID Taxi",
+        "description": "Taxi à Épinay-sur-Seine (93800). Navettes aéroports, gares et tous trajets. Service 24h/24. Appelez le 06 85 73 03 39.",
+        "h1": "Taxi à Épinay-sur-Seine",
+        "keywords": ["taxi epinay-sur-seine", "taxi epinay", "taxi 93800", "vtc epinay"]
+      },
+      "content": {
+        "intro": "Service de taxi à Épinay-sur-Seine. ID Taxi vous transporte vers toutes vos destinations.",
+        "services": "Aéroports, gares, rendez-vous, événements.",
+        "availability": "Taxi disponible 24h/24 à Épinay-sur-Seine."
+      }
+    },
+    {
+      "slug": "sannois",
+      "name": "Sannois",
+      "postalCode": "95110",
+      "department": "Val-d'Oise",
+      "departmentCode": "95",
+      "isMain": false,
+      "coordinates": {
+        "lat": 48.9708,
+        "lng": 2.2558
+      },
+      "seo": {
+        "title": "Taxi Sannois | Transfert Aéroport - ID Taxi 95",
+        "description": "Taxi à Sannois (95110). Transferts aéroports Roissy, Orly et tous trajets. Réservez ID Taxi au 06 85 73 03 39.",
+        "h1": "Taxi à Sannois",
+        "keywords": ["taxi sannois", "taxi 95110", "vtc sannois"]
+      },
+      "content": {
+        "intro": "Votre taxi à Sannois pour tous vos déplacements dans le Val-d'Oise et la région parisienne.",
+        "services": "Transferts aéroports, trajets quotidiens, événements.",
+        "availability": "Service 24h/24, 7j/7."
+      }
+    },
+    {
+      "slug": "ermont",
+      "name": "Ermont",
+      "postalCode": "95120",
+      "department": "Val-d'Oise",
+      "departmentCode": "95",
+      "isMain": false,
+      "coordinates": {
+        "lat": 48.9903,
+        "lng": 2.2597
+      },
+      "seo": {
+        "title": "Taxi Ermont | Service 24h/24 - ID Taxi Val-d'Oise",
+        "description": "Taxi à Ermont (95120). Navettes aéroports, gare d'Ermont-Eaubonne. Service disponible 24h/24. Appelez le 06 85 73 03 39.",
+        "h1": "Taxi à Ermont",
+        "keywords": ["taxi ermont", "taxi 95120", "taxi gare ermont", "vtc ermont"]
+      },
+      "content": {
+        "intro": "ID Taxi à Ermont : votre solution de transport fiable vers les aéroports, gares et toutes destinations.",
+        "services": "Navettes gare Ermont-Eaubonne, aéroports, trajets personnalisés.",
+        "availability": "Disponible tous les jours, 24 heures sur 24."
+      }
+    },
+    {
+      "slug": "eaubonne",
+      "name": "Eaubonne",
+      "postalCode": "95600",
+      "department": "Val-d'Oise",
+      "departmentCode": "95",
+      "isMain": false,
+      "coordinates": {
+        "lat": 48.9922,
+        "lng": 2.2794
+      },
+      "seo": {
+        "title": "Taxi Eaubonne | Réservation Taxi 95 - ID Taxi",
+        "description": "Service de taxi à Eaubonne (95600). Transferts aéroports et gares. Disponible 24h/24. Réservez au 06 85 73 03 39.",
+        "h1": "Taxi à Eaubonne",
+        "keywords": ["taxi eaubonne", "taxi 95600", "vtc eaubonne"]
+      },
+      "content": {
+        "intro": "Taxi à Eaubonne pour vos déplacements quotidiens et transferts aéroports.",
+        "services": "Tous trajets Val-d'Oise, Paris et aéroports.",
+        "availability": "Service disponible 24h/24."
+      }
+    },
+    {
+      "slug": "montmorency",
+      "name": "Montmorency",
+      "postalCode": "95160",
+      "department": "Val-d'Oise",
+      "departmentCode": "95",
+      "isMain": false,
+      "coordinates": {
+        "lat": 48.9914,
+        "lng": 2.3225
+      },
+      "seo": {
+        "title": "Taxi Montmorency | Transfert & Réservation - ID Taxi",
+        "description": "Taxi à Montmorency (95160). Navettes aéroports Roissy et Orly. Service 24h/24, 7j/7. Appelez le 06 85 73 03 39.",
+        "h1": "Taxi à Montmorency",
+        "keywords": ["taxi montmorency", "taxi 95160", "vtc montmorency"]
+      },
+      "content": {
+        "intro": "ID Taxi dessert Montmorency et la vallée de Montmorency pour tous vos besoins de transport.",
+        "services": "Transferts aéroports, gares, déplacements locaux.",
+        "availability": "Disponible jour et nuit."
+      }
+    },
+    {
+      "slug": "franconville",
+      "name": "Franconville",
+      "postalCode": "95130",
+      "department": "Val-d'Oise",
+      "departmentCode": "95",
+      "isMain": false,
+      "coordinates": {
+        "lat": 48.9886,
+        "lng": 2.2306
+      },
+      "seo": {
+        "title": "Taxi Franconville | Service 24h/24 - ID Taxi 95",
+        "description": "Votre taxi à Franconville (95130). Transferts aéroports, gares et tous trajets. Réservez au 06 85 73 03 39.",
+        "h1": "Taxi à Franconville",
+        "keywords": ["taxi franconville", "taxi 95130", "vtc franconville"]
+      },
+      "content": {
+        "intro": "Service de taxi professionnel à Franconville. ID Taxi vous accompagne pour tous vos déplacements.",
+        "services": "Aéroports Roissy et Orly, gares parisiennes, trajets locaux.",
+        "availability": "Service 24h/24, 7j/7."
+      }
+    },
+    {
+      "slug": "deuil-la-barre",
+      "name": "Deuil-la-Barre",
+      "postalCode": "95170",
+      "department": "Val-d'Oise",
+      "departmentCode": "95",
+      "isMain": false,
+      "coordinates": {
+        "lat": 48.9767,
+        "lng": 2.3281
+      },
+      "seo": {
+        "title": "Taxi Deuil-la-Barre | Réservation - ID Taxi Val-d'Oise",
+        "description": "Taxi à Deuil-la-Barre (95170). Transferts aéroports et tous trajets. Service 24h/24. Appelez le 06 85 73 03 39.",
+        "h1": "Taxi à Deuil-la-Barre",
+        "keywords": ["taxi deuil-la-barre", "taxi 95170", "vtc deuil-la-barre"]
+      },
+      "content": {
+        "intro": "ID Taxi à votre service à Deuil-la-Barre pour vos transferts et déplacements.",
+        "services": "Aéroports, gares, rendez-vous médicaux.",
+        "availability": "Disponible 24h/24."
+      }
+    },
+    {
+      "slug": "soisy-sous-montmorency",
+      "name": "Soisy-sous-Montmorency",
+      "postalCode": "95230",
+      "department": "Val-d'Oise",
+      "departmentCode": "95",
+      "isMain": false,
+      "coordinates": {
+        "lat": 48.9889,
+        "lng": 2.3003
+      },
+      "seo": {
+        "title": "Taxi Soisy-sous-Montmorency | ID Taxi 95",
+        "description": "Service de taxi à Soisy-sous-Montmorency (95230). Navettes aéroports et tous trajets. Réservez au 06 85 73 03 39.",
+        "h1": "Taxi à Soisy-sous-Montmorency",
+        "keywords": ["taxi soisy-sous-montmorency", "taxi 95230", "vtc soisy"]
+      },
+      "content": {
+        "intro": "Taxi à Soisy-sous-Montmorency avec ID Taxi. Transport fiable vers toutes destinations.",
+        "services": "Transferts aéroports, gares, trajets personnalisés.",
+        "availability": "Service 24h/24, 7j/7."
+      }
+    },
+    {
+      "slug": "groslay",
+      "name": "Groslay",
+      "postalCode": "95410",
+      "department": "Val-d'Oise",
+      "departmentCode": "95",
+      "isMain": false,
+      "coordinates": {
+        "lat": 48.9856,
+        "lng": 2.3439
+      },
+      "seo": {
+        "title": "Taxi Groslay | Réservation Taxi - ID Taxi",
+        "description": "Taxi à Groslay (95410). Transferts aéroports Roissy, Orly. Service disponible 24h/24. Appelez le 06 85 73 03 39.",
+        "h1": "Taxi à Groslay",
+        "keywords": ["taxi groslay", "taxi 95410", "vtc groslay"]
+      },
+      "content": {
+        "intro": "Votre taxi à Groslay pour tous vos déplacements dans le Val-d'Oise.",
+        "services": "Aéroports, gares, événements.",
+        "availability": "Disponible jour et nuit."
+      }
+    }
+  ]
+}
