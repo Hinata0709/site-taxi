@@ -1620,3 +1620,33 @@ a.contact-value:hover {
     border-radius: var(--radius-lg);
     text-align: center;
 }
+
+/* Mobile Optimizations for New Sections */
+@media (max-width: 480px) {
+    .zones-simple-text {
+        font-size: 1rem;
+    }
+    
+    .zone-card.simplified {
+        padding: var(--spacing-lg);
+    }
+    
+    .zone-card-value {
+        font-size: 1.25rem;
+    }
+
+    /* Testimonial card sizing for mobile */
+    .testimonial-card {
+        width: 280px; /* Slightly narrower for mobile screens */
+    }
+    
+    /* Ensure no horizontal overflow except for carousel */
+    body, html {
+        overflow-x: hidden;
+    }
+    
+    .testimonials-container {
+        width: 100vw;
+        padding: var(--spacing-lg) 0;
+    }
+}
