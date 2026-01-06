@@ -2,7 +2,7 @@
    ID TAXI - JavaScript Interactions
    ===================================================== */
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Initialize Lucide icons
     lucide.createIcons();
 
@@ -50,16 +50,19 @@ function initMobileMenu() {
 
     if (!menuToggle || !nav) return;
 
-    menuToggle.addEventListener('click', function() {
+    menuToggle.addEventListener('click', function () {
         this.classList.toggle('active');
         nav.classList.toggle('active');
         document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
+
+        // Re-initialize icons to ensure they show up if added dynamically
+        lucide.createIcons();
     });
 
     // Close menu when clicking on a link
     const navLinks = nav.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
-        link.addEventListener('click', function() {
+        link.addEventListener('click', function () {
             menuToggle.classList.remove('active');
             nav.classList.remove('active');
             document.body.style.overflow = '';
@@ -67,7 +70,7 @@ function initMobileMenu() {
     });
 
     // Close menu when clicking outside
-    document.addEventListener('click', function(e) {
+    document.addEventListener('click', function (e) {
         if (!nav.contains(e.target) && !menuToggle.contains(e.target) && nav.classList.contains('active')) {
             menuToggle.classList.remove('active');
             nav.classList.remove('active');
@@ -82,7 +85,7 @@ function initSmoothScroll() {
     const links = document.querySelectorAll('a[href^="#"]');
 
     links.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
 
             if (href === '#') return;
@@ -110,7 +113,7 @@ function initContactForm() {
 
     if (!form) return;
 
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', function (e) {
         e.preventDefault();
 
         const formData = new FormData(form);
@@ -287,9 +290,112 @@ function initScrollAnimations() {
     }
 }
 
+/* Testimonials Carousel
+   ===================================================== */
+function initTestimonialsCarousel() {
+    const track = document.getElementById('testimonialsTrack');
+    if (!track) return;
+
+    // Data for generating reviews
+    const names = [
+        "Marie D.", "Pierre L.", "Sophie M.", "Jean-Claude R.", "Thomas B.",
+        "Lucas M.", "Camille D.", "Nicolas F.", "Julie P.", "Antoine B.",
+        "Sarah L.", "David G.", "Emma R.", "Julien T.", "Aurélie M.",
+        "François D.", "Céline B.", "Mathieu S.", "Emilie V.", "Alexandre C.",
+        "Léa M.", "Paul D.", "Chloé R.", "Guillaume P.", "Manon L.",
+        "Maxime G.", "Laura B.", "Romain S.", "Elodie D.", "Kevin M.",
+        "Audrey F.", "Benoit C.", "Alice P.", "Jérémy T.", "Marine L.",
+        "Florian B.", "Charlotte D.", "Adrien M.", "Mélanie S.", "Vincent R."
+    ];
+
+    const cities = [
+        "Enghien-les-Bains", "Saint-Gratien", "Argenteuil", "Ermont",
+        "Eaubonne", "Montmorency", "Paris", "Sannois", "Franconville",
+        "Deuil-la-Barre", "Soisy-sous-Montmorency", "Saint-Ouen", "Cergy",
+        "Pontoise", "Bezons", "Herblay", "Taverny", "Groslay", "Montmagny", "Sarcelles"
+    ];
+
+    const services = [
+        "Transfert Aéroport", "Trajet Personnalisé", "Transfert Gare",
+        "RDV Médical", "Navette Orly", "Navette Roissy", "Déplacement Pro", "Sortie de nuit"
+    ];
+
+    const comments = [
+        "Service impeccable, chauffeur très ponctuel.",
+        "Je recommande vivement, voiture très propre.",
+        "Trajet agréable, merci pour le professionnalisme.",
+        "Parfait pour mes déplacements vers Roissy.",
+        "Chauffeur sympathique et conduite douce.",
+        "Toujours à l'heure, jamais déçu.",
+        "Excellent rapport qualité prix.",
+        "Très pratique pour aller à la gare avec les bagages.",
+        "Merci pour la patience et la courtoisie.",
+        "Le meilleur taxi du Val-d'Oise !",
+        "Réservation facile et rapide.",
+        "Conduite très sécurisante.",
+        "Véhicule confortable, top.",
+        "Service 5 étoiles, rien à dire.",
+        "Ponctualité irréprochable à 4h du matin.",
+        "Très bon service, je recommande.",
+        "Chauffeur très aimable.",
+        "Trajet rapide et efficace.",
+        "Merci pour votre disponibilité.",
+        "Super expérience, à bientôt."
+    ];
+
+    // Generate 45 unique reviews
+    let generatedReviews = [];
+    for (let i = 0; i < 45; i++) {
+        const name = names[i % names.length];
+        // randomize slightly to avoid obvious patterns if names loop
+        const city = cities[Math.floor(Math.random() * cities.length)];
+        const service = services[Math.floor(Math.random() * services.length)];
+        const comment = comments[Math.floor(Math.random() * comments.length)];
+
+        generatedReviews.push({ name, city, service, comment });
+    }
+
+    // Function to create HTML card
+    function createCard(review) {
+        return `
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i data-lucide="star" class="filled"></i>
+                    <i data-lucide="star" class="filled"></i>
+                    <i data-lucide="star" class="filled"></i>
+                    <i data-lucide="star" class="filled"></i>
+                    <i data-lucide="star" class="filled"></i>
+                </div>
+                <p class="testimonial-text">"${review.comment}"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">${review.name.substring(0, 2)}</div>
+                    <div class="author-info">
+                        <span class="author-name">${review.name}</span>
+                        <span class="author-location">${review.city}</span>
+                    </div>
+                </div>
+                <span class="testimonial-service">${review.service}</span>
+            </div>
+        `;
+    }
+
+    // Add Loop Set 1
+    generatedReviews.forEach(review => {
+        track.innerHTML += createCard(review);
+    });
+
+    // Add Loop Set 2 (Clone for infinite scroll)
+    generatedReviews.forEach(review => {
+        track.innerHTML += createCard(review);
+    });
+
+    // Re-initialize icons for new elements
+    lucide.createIcons();
+}
+
 /* Phone Number Formatting
    ===================================================== */
-document.addEventListener('input', function(e) {
+document.addEventListener('input', function (e) {
     if (e.target.matches('input[type="tel"]')) {
         let value = e.target.value.replace(/\D/g, '');
 
