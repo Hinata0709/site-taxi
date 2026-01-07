@@ -163,7 +163,7 @@ function initContactForm() {
                 `Message:\n${data.message || 'Non spécifié'}`
             );
 
-            window.location.href = `mailto:reservation@id-taxi.fr?subject=${subject}&body=${body}`;
+            window.location.href = `mailto:idtaxi@gmail.com?subject=${subject}&body=${body}`;
 
             showNotification('Votre demande a été préparée. Votre client mail va s\'ouvrir.', 'success');
 
