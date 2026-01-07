@@ -1636,23 +1636,26 @@ a.contact-value:hover {
 
     /* Mobile Menu Overlay Fix */
     .nav {
+        display: none;
+        /* Hide by default on mobile */
         position: fixed;
         top: 80px;
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #fafafa !important;
-        /* Force solid background */
+        height: calc(100vh - 80px);
+        /* Fill remaining height */
+        background-color: #ffffff !important;
+        background: #ffffff !important;
         opacity: 1 !important;
         flex-direction: column;
         padding: var(--spacing-xl);
         gap: var(--spacing-lg);
         transform: translateX(-100%);
-        transition: transform var(--transition-normal);
-        z-index: 9999 !important;
-        /* Maximum elevation */
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        z-index: 99999 !important;
         overflow-y: auto;
+        border-top: 1px solid #eee;
     }
 
     .nav.active {
@@ -1736,4 +1739,9 @@ a.contact-value:hover {
         font-size: 1.75rem;
         word-wrap: break-word;
     }
+}
+/* Ensure Header is Solid when Menu is Open */
+.header.menu-open {
+    background: #ffffff !important;
+    backdrop-filter: none !important;
 }

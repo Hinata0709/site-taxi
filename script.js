@@ -46,13 +46,14 @@ function initHeaderScroll() {
    ===================================================== */
 function initMobileMenu() {
     const menuToggle = document.getElementById('menuToggle');
-    const nav = document.getElementById('nav');
+    const header = document.getElementById('header');
 
     if (!menuToggle || !nav) return;
 
     menuToggle.addEventListener('click', function () {
         this.classList.toggle('active');
         nav.classList.toggle('active');
+        if (header) header.classList.toggle('menu-open');
         document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
 
         // Re-initialize icons to ensure they show up if added dynamically
