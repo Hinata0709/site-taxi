@@ -142,6 +142,45 @@ ul {
     gap: 0.25rem;
     font-weight: 800;
     font-size: 1.75rem;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+
+.logo span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* Stagger delays handled in JS, or hardcoded for simple words "ID" and "TAXI" */
+
+.logo-underline {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(to right, #3b82f6, #a855f7, #ec4899);
+    border-radius: 9999px;
+    animation: expandLine 0.8s ease-out forwards;
+    animation-delay: 0.8s;
+    /* Wait for text to finish */
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes expandLine {
+    to {
+        width: 100%;
+        left: 0%;
+    }
 }
 
 .logo-id {
@@ -1740,6 +1779,7 @@ a.contact-value:hover {
         word-wrap: break-word;
     }
 }
+
 /* Ensure Header is Solid when Menu is Open */
 .header.menu-open {
     background: #ffffff !important;

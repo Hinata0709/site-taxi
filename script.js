@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initialize Lucide icons
     lucide.createIcons();
 
+    // Logo Animation
+    initLogoAnimation();
+
     // Header scroll effect
     initHeaderScroll();
 
@@ -452,4 +455,41 @@ if ('serviceWorker' in navigator) {
         // Service worker registration can be added here for PWA support
         // navigator.serviceWorker.register('/sw.js');
     });
+}
+
+/* Logo Animation
+   ===================================================== */
+function initLogoAnimation() {
+    const logoId = document.querySelector('.logo-id');
+    const logoTaxi = document.querySelector('.logo-taxi');
+    const logoLink = document.querySelector('.logo');
+
+    if (!logoId || !logoTaxi || !logoLink) return;
+
+    // Split text into spans for "ID"
+    const idText = logoId.textContent;
+    logoId.innerHTML = '';
+    idText.split('').forEach((char, index) => {
+        const span = document.createElement('span');
+        span.textContent = char;
+        span.style.animationDelay = `${index * 0.1}s`;
+        logoId.appendChild(span);
+    });
+
+    // Split text into spans for "TAXI"
+    const taxiText = logoTaxi.textContent;
+    logoTaxi.innerHTML = '';
+    taxiText.split('').forEach((char, index) => {
+        const span = document.createElement('span');
+        span.textContent = char;
+        // Start "TAXI" after "ID" finishes (2 chars * 0.1s + small buffer)
+        span.style.animationDelay = `${(idText.length * 0.1) + (index * 0.1)}s`;
+        logoTaxi.appendChild(span);
+    });
+
+    // Add Underline
+    const underline = document.createElement('div');
+    underline.className = 'logo-underline';
+    // Style override to match user request (start hidden then expand)
+    logoLink.appendChild(underline);
 }
