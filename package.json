@@ -1,0 +1,11 @@
+{
+    "name": "id-taxi-website",
+    "version": "1.0.0",
+    "description": "Static site wrapper",
+    "scripts": {
+        "build": "rm -rf dist && mkdir dist && cp index.html styles.css script.js dist/ && if [ -d \"assets\" ]; then cp -r assets dist/; fi"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
