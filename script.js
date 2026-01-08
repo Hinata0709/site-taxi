@@ -466,6 +466,9 @@ function initLogoAnimation() {
 
     if (!logoId || !logoTaxi || !logoLink) return;
 
+    // Avoid double-initialization
+    if (logoId.querySelector('span')) return;
+
     // Split text into spans for "ID"
     const idText = logoId.textContent;
     logoId.innerHTML = '';

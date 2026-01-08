@@ -147,7 +147,18 @@ ul {
     padding-bottom: 5px;
 }
 
-.logo span {
+/* Ensure container spans are visible and act as blocks for layout */
+.logo-id,
+.logo-taxi {
+    display: inline-block;
+    position: relative;
+    /* Reset opacity just in case */
+    opacity: 1;
+}
+
+/* Target the generated character spans */
+.logo-id span,
+.logo-taxi span {
     display: inline-block;
     opacity: 0;
     transform: translateY(20px);
