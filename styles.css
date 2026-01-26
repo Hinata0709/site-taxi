@@ -1909,7 +1909,7 @@ a.contact-value:hover {
     .hero-cta {
         flex-direction: column;
         align-items: center;
-        margin-bottom: var(--spacing-lg);
+        margin-bottom: var(--spacing-2xl);
     }
 
     .hero-cta .btn {
@@ -1921,6 +1921,7 @@ a.contact-value:hover {
         flex-direction: column;
         gap: 0;
         padding: var(--spacing-lg);
+        margin-bottom: var(--spacing-3xl);
     }
 
     .contact-item {
