@@ -1,11 +1,12 @@
 {
     "name": "id-taxi-website",
-    "version": "1.0.0",
-    "description": "Static site wrapper",
+    "version": "2.0.0",
+    "description": "ID Taxi - Service de Transport Premium",
     "scripts": {
-        "build": "rm -rf dist && mkdir dist && cp index.html styles.css script.js dist/ && if [ -d \"assets\" ]; then cp -r assets dist/; fi"
+        "build": "rm -rf dist && mkdir dist && cp index.html styles.css script.js robots.txt sitemap.xml og-image.png dist/ && if [ -d \"assets\" ]; then cp -r assets dist/; fi",
+        "serve": "npx serve -p 3000"
     },
-    "keywords": [],
-    "author": "",
+    "keywords": ["taxi", "ermont", "transport", "premium", "val-d'oise"],
+    "author": "ID Taxi",
     "license": "ISC"
 }

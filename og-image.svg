@@ -1,0 +1,33 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A0A0A"/>
+      <stop offset="100%" style="stop-color:#1A1A1A"/>
+    </linearGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C9A227"/>
+      <stop offset="100%" style="stop-color:#D4AF37"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle gold accent line -->
+  <rect x="0" y="620" width="1200" height="10" fill="url(#goldGradient)"/>
+
+  <!-- Logo ID TAXI -->
+  <text x="600" y="280" text-anchor="middle" font-family="Georgia, serif" font-size="120" font-weight="600">
+    <tspan fill="#C9A227">ID</tspan><tspan fill="#FFFFFF">TAXI</tspan>
+  </text>
+
+  <!-- Slogan -->
+  <text x="600" y="380" text-anchor="middle" font-family="Georgia, serif" font-size="36" font-style="italic" fill="#A3A3A3">
+    Une autre idée du transport en taxi
+  </text>
+
+  <!-- Location -->
+  <text x="600" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#737373" letter-spacing="4">
+    ERMONT - VAL-D'OISE - 24H/24
+  </text>
+</svg>
