@@ -432,8 +432,8 @@ h6 {
 }
 
 .btn-outline-white {
-    background: transparent;
-    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.8);
     color: var(--color-white);
 }
 
@@ -767,6 +767,7 @@ h6 {
     color: var(--color-black);
 }
 
+.feature-card h2,
 .feature-card h3 {
     font-family: var(--font-display);
     font-size: 1.125rem;
@@ -1901,6 +1902,10 @@ a.contact-value:hover {
    RESPONSIVE ADJUSTMENTS
    ===================================================== */
 @media (max-width: 768px) {
+    .hero-badge {
+        margin-top: var(--spacing-2xl);
+    }
+
     .hero-contact-bar {
         flex-direction: column;
         gap: 0;
