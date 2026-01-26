@@ -28,10 +28,11 @@ document.addEventListener('DOMContentLoaded', function () {
     initTestimonialsCarousel();
 });
 
-/* Header Scroll Effect
+/* Header Scroll Effect (Optimisé avec throttle)
    ===================================================== */
 function initHeaderScroll() {
     const header = document.getElementById('header');
+    let ticking = false;
 
     function handleScroll() {
         if (window.scrollY > 50) {
@@ -39,9 +40,16 @@ function initHeaderScroll() {
         } else {
             header.classList.remove('scrolled');
         }
+        ticking = false;
     }
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', function() {
+        if (!ticking) {
+            requestAnimationFrame(handleScroll);
+            ticking = true;
+        }
+    }, { passive: true });
+
     handleScroll(); // Initial check
 }
 
@@ -49,6 +57,7 @@ function initHeaderScroll() {
    ===================================================== */
 function initMobileMenu() {
     const menuToggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('nav');
     const header = document.getElementById('header');
 
     if (!menuToggle || !nav) return;
@@ -69,6 +78,7 @@ function initMobileMenu() {
         link.addEventListener('click', function () {
             menuToggle.classList.remove('active');
             nav.classList.remove('active');
+            if (header) header.classList.remove('menu-open');
             document.body.style.overflow = '';
         });
     });
@@ -78,12 +88,13 @@ function initMobileMenu() {
         if (!nav.contains(e.target) && !menuToggle.contains(e.target) && nav.classList.contains('active')) {
             menuToggle.classList.remove('active');
             nav.classList.remove('active');
+            if (header) header.classList.remove('menu-open');
             document.body.style.overflow = '';
         }
     });
 }
 
-/* Smooth Scroll
+/* Smooth Scroll (Optimisé)
    ===================================================== */
 function initSmoothScroll() {
     const links = document.querySelectorAll('a[href^="#"]');
@@ -100,7 +111,7 @@ function initSmoothScroll() {
             e.preventDefault();
 
             const headerHeight = document.getElementById('header').offsetHeight;
-            const targetPosition = target.offsetTop - headerHeight;
+            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
 
             window.scrollTo({
                 top: targetPosition,
@@ -250,48 +261,44 @@ function showNotification(message, type = 'info') {
     }, 5000);
 }
 
-/* Scroll Animations
+/* Scroll Animations (Optimisé - moins d'éléments, plus fluide)
    ===================================================== */
 function initScrollAnimations() {
     const observerOptions = {
         root: null,
-        rootMargin: '0px',
-        threshold: 0.1
+        rootMargin: '50px',
+        threshold: 0.15
     };
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('animate-in');
+                requestAnimationFrame(() => {
+                    entry.target.classList.add('animate-in');
+                });
                 observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
 
-    // Elements to animate
-    const animateElements = document.querySelectorAll(
-        '.feature-card, .service-card, .testimonial-card, .contact-card, .zone-stat, .about-feature'
-    );
+    // Éléments principaux uniquement (réduit pour performance)
+    const elementsToAnimate = [
+        '.section-header',
+        '.feature-card',
+        '.service-card',
+        '.contact-card',
+        '.about-card',
+        '.zones-highlight',
+        '.zones-visual',
+        '.cta-content'
+    ];
 
-    animateElements.forEach((el, index) => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+    const elements = document.querySelectorAll(elementsToAnimate.join(', '));
+
+    elements.forEach((el) => {
+        el.classList.add('reveal-on-scroll');
         observer.observe(el);
     });
-
-    // Add animation class styles
-    if (!document.querySelector('#animation-styles')) {
-        const style = document.createElement('style');
-        style.id = 'animation-styles';
-        style.textContent = `
-            .animate-in {
-                opacity: 1 !important;
-                transform: translateY(0) !important;
-            }
-        `;
-        document.head.appendChild(style);
-    }
 }
 
 /* Testimonials Carousel
@@ -347,14 +354,13 @@ function initTestimonialsCarousel() {
         "Super expérience, à bientôt."
     ];
 
-    // Generate 45 unique reviews
+    // Generate 20 unique reviews (réduit pour performance)
     let generatedReviews = [];
-    for (let i = 0; i < 45; i++) {
+    for (let i = 0; i < 20; i++) {
         const name = names[i % names.length];
-        // randomize slightly to avoid obvious patterns if names loop
-        const city = cities[Math.floor(Math.random() * cities.length)];
-        const service = services[Math.floor(Math.random() * services.length)];
-        const comment = comments[Math.floor(Math.random() * comments.length)];
+        const city = cities[i % cities.length];
+        const service = services[i % services.length];
+        const comment = comments[i % comments.length];
 
         generatedReviews.push({ name, city, service, comment });
     }
@@ -421,7 +427,7 @@ document.addEventListener('input', function (e) {
     }
 });
 
-/* Active Navigation Link
+/* Active Navigation Link (Optimisé avec throttle)
    ===================================================== */
 function updateActiveNavLink() {
     const sections = document.querySelectorAll('section[id]');
@@ -446,7 +452,16 @@ function updateActiveNavLink() {
     });
 }
 
-window.addEventListener('scroll', updateActiveNavLink);
+let navTicking = false;
+window.addEventListener('scroll', function() {
+    if (!navTicking) {
+        requestAnimationFrame(() => {
+            updateActiveNavLink();
+            navTicking = false;
+        });
+        navTicking = true;
+    }
+}, { passive: true });
 
 /* Service Worker Registration (for PWA support)
    ===================================================== */

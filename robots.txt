@@ -1,0 +1,11 @@
+# Robots.txt for ID Taxi
+# https://idtaxi.fr
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://idtaxi.fr/sitemap.xml
+
+# Crawl-delay (optional, be gentle with small sites)
+Crawl-delay: 1
