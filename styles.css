@@ -1906,6 +1906,17 @@ a.contact-value:hover {
         margin-top: var(--spacing-2xl);
     }
 
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .hero-cta .btn {
+        width: 100%;
+        max-width: 320px;
+    }
+
     .hero-contact-bar {
         flex-direction: column;
         gap: 0;
@@ -1921,16 +1932,6 @@ a.contact-value:hover {
 
     .contact-item:last-child {
         border-bottom: none;
-    }
-
-    .hero-cta {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero-cta .btn {
-        width: 100%;
-        max-width: 320px;
     }
 }
 
