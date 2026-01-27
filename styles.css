@@ -591,6 +591,10 @@ h6 {
     margin-bottom: var(--spacing-4xl);
 }
 
+.hero-cta .btn {
+    min-width: 260px;
+}
+
 .hero-contact-bar {
     display: flex;
     flex-wrap: wrap;
@@ -1518,6 +1522,10 @@ h6 {
     gap: var(--spacing-lg);
 }
 
+.cta-buttons .btn {
+    min-width: 340px;
+}
+
 /* =====================================================
    CONTACT - Refined Forms
    ===================================================== */
@@ -2015,11 +2023,25 @@ a.contact-value:hover {
     }
 
     /* Animation décalée pour chaque lien */
-    .nav.active .nav-link:nth-child(1) { transition-delay: 0.05s; }
-    .nav.active .nav-link:nth-child(2) { transition-delay: 0.1s; }
-    .nav.active .nav-link:nth-child(3) { transition-delay: 0.15s; }
-    .nav.active .nav-link:nth-child(4) { transition-delay: 0.2s; }
-    .nav.active .nav-link:nth-child(5) { transition-delay: 0.25s; }
+    .nav.active .nav-link:nth-child(1) {
+        transition-delay: 0.05s;
+    }
+
+    .nav.active .nav-link:nth-child(2) {
+        transition-delay: 0.1s;
+    }
+
+    .nav.active .nav-link:nth-child(3) {
+        transition-delay: 0.15s;
+    }
+
+    .nav.active .nav-link:nth-child(4) {
+        transition-delay: 0.2s;
+    }
+
+    .nav.active .nav-link:nth-child(5) {
+        transition-delay: 0.25s;
+    }
 
     .nav-link::after {
         display: none;
@@ -2081,6 +2103,7 @@ a.contact-value:hover {
    MOBILE TOUCH - Styles pour appareils sans hover
    ===================================================== */
 @media (hover: none) and (pointer: coarse) {
+
     /* Feature cards - toujours afficher la ligne dorée */
     .feature-card::before {
         transform: scaleX(1);
